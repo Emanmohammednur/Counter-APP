@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url(image/download-10.jpg);
+
+}
+
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size :10em;
+    font-family: Helvetica;
+    margin: 20px 0;
+}
+#btnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+.count{
+    color: white;
+}
+.button{
+    padding:12px 20px;
+    font-size: 23px;
+    color: white;
+    background-color: hsl(131, 81%, 29%);
+    border-radius: 5px;
+    border-style: none;
+    
+    cursor: pointer;
+    transition:background-color 0.25s;
+
+}
+.button:hover{
+    background-color: hsl(127, 85%, 15%);
+
+}
+
+
+.container{
+    max-width: 500px;
+    width: 90%;
+    margin: 100px auto;
+    padding: 20px auto;
+    box-shadow: 0 10px 25px;
+    border-color: black;
+     /* Glass effect */
+    background: rgba(255, 255, 255, 0.15); /* transparent white */
+    backdrop-filter: blur(2px);          /* blur background */
+    -webkit-backdrop-filter: blur(6px);  /* for Safari */
+    border-radius: 15px;
+
+    /* Soft shadow */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+    /* Optional border for glass look */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.container h1{
+    font-size: 42px;
+    color: rgb(31, 206, 31);
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.buttons{
+    padding-bottom: 25px;
+}
+/* Counter pop animation */
+@keyframes pop {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.pop {
+    animation: pop 0.2s ease;
+}
+
+.btn{
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
